@@ -1,0 +1,12 @@
+.line-wrap {
+    overflow: hidden;
+    min-height: 32px;
+}
+
+.lineParent {
+    overflow: hidden;
+}
+
+.lineChildren {
+    transform: translate(0, 500px);
+}

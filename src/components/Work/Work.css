@@ -1,0 +1,19 @@
+.hero-image {
+    background-color: #171717;
+    height: 900px;
+    border-radius: 0 0 2rem 2rem;
+    color: #fff;
+}
+
+.source-text {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* .hero-animated {
+    position: absolute;
+}
+
+.work-inner {
+    display: flex;
+    justify-content: center;
+}  */

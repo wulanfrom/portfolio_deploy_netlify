@@ -1,0 +1,24 @@
+.other-project {
+    /* background-color: #c4c4c4; */
+    height: 350px;
+    width: 250px;
+    /* border-radius: 4px; */
+    margin: 0;
+    display: inline;
+}
+
+/* for medium size screens bellow */
+@media screen and (max-width: 992px) {
+    .other-project {
+      margin-bottom: 12px;
+    }
+}
+
+.section-sub {
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  border-bottom: 1px solid #000;
+}

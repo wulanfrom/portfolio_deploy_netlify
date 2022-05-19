@@ -1,0 +1,21 @@
+.wulanfrom-navbar {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+.nav-link {
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    /* color: #000!important; */
+    padding-left: 2rem!important;
+}
+
+.navbar-brand {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* .wulanfrom-navbar {
+    position: absolute;
+    width: 100%;
+} */
