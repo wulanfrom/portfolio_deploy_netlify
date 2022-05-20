@@ -66,34 +66,14 @@ export default function ProjectFooter(props) {
                         <Link to="/" style={{color: "#fff"}}><p className="bebas-text" style={{fontSize: "120px", lineHeight: "120px"}}>Back to Projects</p></Link>
                     </div>
                 </div>
-                {/* <Row>
-                    <Col>
-                        <Link className="link-container" to={ projectLinks.ceeya }>
-                            <img className="prev-project-item" src={prevProject}></img>
-                            <div className="pt-2">
-                                <p className="prev-project-title m-0 text-white">Asian CHI</p>
-                                <p className="prev-project-category m-0 text-white">WEBSITE DESIGN AND DEVELOPMENT</p>
-                            </div>
-                        </Link>
-                    </Col>
-                    <Col>
-                        <Link className="link-container" to={ projectLinks.someWeather }>
-                            <img className="next-project-item" src={nextProject}></img>
-                            <div className="pt-2 next-project-info">
-                                <p className="next-project-title m-0 text-white">Asian CHI</p>
-                                <p className="next-project-category m-0 text-white">WEBSITE DESIGN AND DEVELOPMENT</p>
-                            </div>
-                        </Link>
-                    </Col>
-                </Row> */}
                 <Divider height={24} />
                 <Row className="footer-responsive mt-3 mb-2">
                     <Col sm={12} md={12} lg={12} className="d-flex align-items-center justify-content-center text-white">
                         <div className="d-flex">
                             <a href="mailto:biasindi.wulanfrom@gmail.com" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Email} /></a>
+                            <a href="https://www.linkedin.com/in/wulanfrom/" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={LinkedIn} /></a>
                             <a href="https://www.behance.net/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Behance} /></a>
                             <a href="https://dribbble.com/biasindi" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Dribbble} /></a>
-                            <a href="https://www.linkedin.com/in/wulanfrom/" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={LinkedIn} /></a>
                             <a href="https://github.com/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Github} /></a>
                         </div>
                     </Col>

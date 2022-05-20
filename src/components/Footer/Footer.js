@@ -68,24 +68,13 @@ export default function Footer() {
                         </div>
                     </Col>
                 </Row>
-                {/* <Row className="footer-responsive mt-3">
-                    <Col sm={9} md={9} lg={9} className="d-flex align-items-center text-white">
-                        <div className="d-flex">
-                            <a href="mailto:biasindi.wulanfrom@gmail.com" target="_blank" rel="noopener noreferrer" className="social-links me-4 mb-3">Email</a>
-                            <a href="https://www.behance.net/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links me-4 mb-3">Behance</a>
-                            <a href="https://dribbble.com/biasindi" target="_blank" rel="noopener noreferrer" className="social-links me-4 mb-3">Dribbble</a>
-                            <a href="https://www.linkedin.com/in/wulanfrom/" target="_blank" rel="noopener noreferrer" className="social-links me-4 mb-3">LinkedIn</a>
-                            <a href="https://github.com/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links me-4 mb-3">Github</a>
-                        </div>
-                    </Col>
-                </Row> */}
                 <Row className="footer-responsive mt-3 mb-2">
                     <Col sm={12} md={12} lg={12} className="d-flex align-items-center justify-content-center text-white">
                         <div className="d-flex">
                             <a href="mailto:biasindi.wulanfrom@gmail.com" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Email} /></a>
+                            <a href="https://www.linkedin.com/in/wulanfrom/" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={LinkedIn} /></a>
                             <a href="https://www.behance.net/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Behance} /></a>
                             <a href="https://dribbble.com/biasindi" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Dribbble} /></a>
-                            <a href="https://www.linkedin.com/in/wulanfrom/" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={LinkedIn} /></a>
                             <a href="https://github.com/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon ml-3 mb-2" src={Github} /></a>
                         </div>
                     </Col>
