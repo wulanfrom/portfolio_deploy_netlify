@@ -71,7 +71,7 @@
 }
 
 .divider-footer {
-    width: 1280px;
+    /* width: 1280px; */
     margin-left: auto;
     margin-right: auto;
     border: 0.5px solid #fff;

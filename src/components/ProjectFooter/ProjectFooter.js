@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Container, Row, Col, DropdownButton, Dropdown } from 'react-bootstrap'
 import './ProjectFooter.css'
 import { Link } from 'react-router-dom'
 import Divider from '../Divider/Divider'
@@ -46,6 +46,15 @@ export default function ProjectFooter(props) {
         goodFood: [projectLinks.color, projectLinks.nft],
     }
 
+    // dropdown
+    const [show, setShow] = useState(false);
+    const showDropdown = (e)=>{
+        setShow(!show);
+    }
+    const hideDropdown = e => {
+        setShow(false);
+    }
+
   return (
     <div>
         <div className="footer-div m-0 p-0 px-5 pt-5 pb-3">
@@ -53,7 +62,7 @@ export default function ProjectFooter(props) {
             <div style={{height: "24px"}}></div>
                 <div>
                     <div className="text-white more-projects mb-4 mt-3">
-                    <p className="footer-move-text  footer-tag m-0 mb-4">Interested in other projects?</p>
+                    <p className="footer-move-text  footer-tag m-0 mb-4">Interested in seeing more?</p>
                         <Link to="/" style={{color: "#fff"}}><p className="bebas-text" style={{fontSize: "120px", lineHeight: "120px"}}>Back to Projects</p></Link>
                     </div>
                 </div>
@@ -89,9 +98,31 @@ export default function ProjectFooter(props) {
                         </div>
                     </Col>
                 </Row>
-                <div className="divider-footer mb-2"></div>
-                <div className="text-center mt-2">
-                    <p className="copyright-text text-white">Copyright 2022. Developed and Designed by wulanfrom with ❤️</p>
+                <div className="d-flex flex-column justify-content-center">
+                    <div className="divider-footer mb-2"></div>
+                    <div className="footer-info-text d-flex justify-content-center align-items-center text-center mt-2">
+                        <p className="copyright-text text-white">Copyright 2022. Developed and Designed by wulanfrom with ❤️</p>
+                        <div className="ml-2">
+                            <DropdownButton
+                                key='up'
+                                id="info-up"
+                                drop='up'
+                                title="info"
+                                className="info-dropdown"
+                                show={show}
+                                onMouseEnter={showDropdown} 
+                                onMouseLeave={hideDropdown}
+                            >
+                                <Dropdown.Header>Built and Developed with</Dropdown.Header>
+                                <div className="ms-3">
+                                    <p className="ml-1" eventKey="4">Figma (Design Tool)</p>
+                                    <p className="ml-1" eventKey="2">React.js (JS Framework)</p>
+                                    <p className="ml-1" eventKey="1">GSAP (Animation)</p>
+                                    <p className="ml-1" eventKey="3">Netlify (Hosting)</p>
+                                </div>
+                            </DropdownButton>
+                        </div>
+                    </div>
                 </div>
             </Container>
         </div>

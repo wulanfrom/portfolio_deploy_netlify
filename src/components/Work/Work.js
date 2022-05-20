@@ -8,6 +8,7 @@ import OtherProjects from '../OtherProjects/OtherProjects'
 import Publications from '../Publications/Publications'
 import Navigation from '../Navbar/Navigation'
 import './Work.css'
+import Preloader from '../Preloader/Preloader'
 
 import { CSSTransition } from 'react-transition-group';
 import { gsap } from 'gsap'
@@ -17,10 +18,10 @@ export default function Work() {
   return (
     <div data-scroll-section>
         <div>
-            <div style={{backgroundColor: "#171717", color: "#fff", height: "110vh"}} className="hero-section hero-animated d-flex flex-column">
+            <div style={{backgroundColor: "#171717", color: "#fff", height: "1000px"}} className="hero-section hero-animated d-flex flex-column">
                 <Divider height={120}/>
                 <Container className="work-inner">
-                    <BigTitle lineContent1="DESIGNER // DEVELOPER // PROBLEM SOLVER" lineContent2="Hi, I'm Nabila!👋"/>
+                    <BigTitle lineContent1="DESIGNER // DEVELOPER // PROBLEM SOLVER" lineContent2="Hi, I'm Nabila!👋" lineContent3="Working at the intersection of design and code, creating experiences that help people."/>
                 </Container>
             </div>
         </div>

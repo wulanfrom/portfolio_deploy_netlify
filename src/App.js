@@ -26,6 +26,7 @@ import AsianCHI from './components/Projects/AsianCHI/AsianCHI';
 // import useLocoScroll from './hooks/useLocoScroll'
 // import locomotiveScroll from 'locomotive-scroll';
 import ScrollToTop from './hooks/ScrollToTop';
+import Preloader from './components/Preloader/Preloader';
 
 function App() {
   const containerRef = useRef(null)
@@ -35,7 +36,7 @@ function App() {
   const [preloader, setPreloader] = useState(true);
   // useLocoScroll(!preloader);
 
-  const [timer, setTimer] = useState(1);
+  const [timer, setTimer] = useState(3);
   const id = useRef(null);
   const clear = () => {
     window.clearInterval(id.current);
@@ -60,10 +61,11 @@ function App() {
   return (
       <>
       { preloader ? (
-        <div style={{height: "100vh", backgroundColor:"#171717", color: "#fff"}} className="loader-wrapper absolute d-flex justify-content-center align-items-center flex-column">
-          <h1 style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "80px" }}>The Portfolio is Loading</h1>
-          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>Have some tea while you wait🍵</h2>
-        </div>
+        // <div style={{height: "100vh", backgroundColor:"#171717", color: "#fff"}} className="loader-wrapper absolute d-flex justify-content-center align-items-center flex-column">
+        //   <h1 style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "80px" }}>The Portfolio is Loading</h1>
+        //   <h2 className="bottom-text" style={{ fontFamily:  "'Source Code Pro', monospace", fontWeight: 300 }}>Have some tea while you wait🍵</h2>
+        // </div>
+        <Preloader />
       ): (
         <div ref={containerRef} id="portfolio-container">
             <Navigation />

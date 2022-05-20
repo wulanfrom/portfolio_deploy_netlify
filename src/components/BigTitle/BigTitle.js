@@ -4,7 +4,7 @@ import SplitText from '../../utils/Split3.min.js'
 import { gsap } from 'gsap'
 import './BigTitle.css'
 
-export default function BigTitle({lineContent1, lineContent2}) {
+export default function BigTitle({lineContent1, lineContent2, lineContent3}) {
     const timeline = gsap.timeline();
 
     useEffect(() => {
@@ -42,7 +42,8 @@ export default function BigTitle({lineContent1, lineContent2}) {
                     <div id="main-hero-text" style={{fontSize: "200px", lineHeight: "220px"}} className="tilt-inner line bebas-text hero-project-title m-0">{lineContent2}</div>
                 </div>
                 <div className="line-wrap hero-project-desc mb-5">
-                    <p  style={{fontSize: "32px", lineHeight: "54px"}}>Working at the intersection of design and code, creating experiences that help people.</p>
+                    {/* <p  style={{fontSize: "32px", lineHeight: "54px"}}>Working at the intersection of design and code, creating experiences that help people.</p> */}
+                    <p  style={{fontSize: "32px", lineHeight: "54px"}}>{lineContent3}</p>
                 </div>
             </div>
             </Col>

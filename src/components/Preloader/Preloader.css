@@ -1,0 +1,16 @@
+.bottom-text-loader {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.top-text-loader {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120px;
+}
+
+.loader-title {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 32px;
+    text-transform: uppercase;
+}

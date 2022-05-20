@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, DropdownButton, Dropdown } from 'react-bootstrap'
 import './Footer.css'
 import Divider from '../Divider/Divider'
 import SplitText from '../../utils/Split3.min.js'
@@ -46,6 +46,15 @@ export default function Footer() {
         }
     }, [reveal])
 
+    // dropdown
+    const [show, setShow] = useState(false);
+    const showDropdown = (e)=>{
+        setShow(!show);
+    }
+    const hideDropdown = e => {
+        setShow(false);
+    }
+
   return (
     <div>
         <div className="footer-div m-0 p-0 px-5 pt-5 pb-3">
@@ -54,8 +63,8 @@ export default function Footer() {
                 <Row ref={footerRef} className={cn({"is-reveal": reveal})}>
                     <Col sm={9} md={8} lg={7} className="d-flex align-items-center">
                         <div className="text-white main-contact">
-                            <p style={{fontSize: "120px", lineHeight: "120px"}} className="footer-move-text bebas-text m-0">Lets chat over coffee☕️</p>
-                            <p className="footer-move-text  footer-tag m-0 mb-4">reach me here</p>
+                            <p style={{fontSize: "120px", lineHeight: "130px"}} className="footer-move-text bebas-text m-0">Lets start something together🚀</p>
+                            <p className="footer-move-text  footer-tag m-0 mb-4">write me a message</p>
                         </div>
                     </Col>
                 </Row>
@@ -77,14 +86,34 @@ export default function Footer() {
                             <a href="https://www.behance.net/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Behance} /></a>
                             <a href="https://dribbble.com/biasindi" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Dribbble} /></a>
                             <a href="https://www.linkedin.com/in/wulanfrom/" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={LinkedIn} /></a>
-                            <a href="https://github.com/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Github} /></a>
+                            <a href="https://github.com/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon ml-3 mb-2" src={Github} /></a>
                         </div>
                     </Col>
                 </Row>
                 <div className="d-flex flex-column justify-content-center">
                     <div className="divider-footer mb-2"></div>
-                    <div className="text-center mt-2">
+                    <div className="footer-info-text d-flex justify-content-center align-items-center text-center mt-2">
                         <p className="copyright-text text-white">Copyright 2022. Developed and Designed by wulanfrom with ❤️</p>
+                        <div className="ml-2">
+                            <DropdownButton
+                                key='up'
+                                id="info-up"
+                                drop='up'
+                                title="info"
+                                className="info-dropdown"
+                                show={show}
+                                onMouseEnter={showDropdown} 
+                                onMouseLeave={hideDropdown}
+                            >
+                                <Dropdown.Header>Built and Developed with</Dropdown.Header>
+                                <div className="ms-3">
+                                    <p className="ml-1" eventKey="4">Figma (Design Tool)</p>
+                                    <p className="ml-1" eventKey="2">React.js (JS Framework)</p>
+                                    <p className="ml-1" eventKey="1">GSAP (Animation)</p>
+                                    <p className="ml-1" eventKey="3">Netlify (Hosting)</p>
+                                </div>
+                            </DropdownButton>
+                        </div>
                     </div>
                 </div>
             </Container>

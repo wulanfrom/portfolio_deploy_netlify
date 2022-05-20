@@ -1,0 +1,24 @@
+.Section-line-about {
+    width: 75px;
+    border: 3px solid #FFF13E;
+}
+
+.about-title {
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+}
+
+.about-quote {
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.about-name {
+    font-weight: 300;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.about-end {
+    font-size: 32px;
+}

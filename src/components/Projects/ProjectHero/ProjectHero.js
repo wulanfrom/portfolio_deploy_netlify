@@ -22,7 +22,7 @@ export default function ProjectHero(props) {
         <div style={{backgroundColor: bgColor, color: textColor}} className="hero-section d-flex flex-column">
         <div className="pt-5">
           <Container className="pt-5">
-            <Divider height={72} />
+            <Divider height={32} />
             {/* <div className="mt-5"></div> */}
             <p className="hero-project-category m-0">{category}</p>
             <p style={{fontSize: "150px", lineHeight: "150px"}} className="bebas-text hero-project-title m-0">{title}</p>

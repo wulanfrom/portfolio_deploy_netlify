@@ -17,24 +17,22 @@ export default function Publications() {
     }, [onScreen])
 
     useEffect(() => {
-        if (reveal){
-            const split = new SplitText(".pubs-text", {
-                type: 'lines',
-            });
+        const split = new SplitText(".pubs-text", {
+            type: 'lines',
+        });
 
-            gsap.to(split.lines, {
-                duration: 1,
-                y: -50,
-                opacity: 1,
-                stagger: 0.1,
-                ease: 'power2'
-            })
-        }
-    }, [reveal])
+        gsap.to(split.lines, {
+            duration: 1,
+            y: -50,
+            opacity: 1,
+            stagger: 0.1,
+            ease: 'power2'
+        })
+    }, [])
 
   return (
     <div>
-        <Container ref={ref} className={cn("pubs-text d-flex my-5", {"is-reveal": reveal})}>
+        <Container ref={ref} className="pubs-text d-flex my-5">
             <Row>
                 <Col sm={4} lg={5} className="d-flex p-0">
                     <h1 style={{fontSize: "90px"}} className="bebas-text">Publications</h1>
