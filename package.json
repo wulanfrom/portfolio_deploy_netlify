@@ -17,7 +17,8 @@
     "react-tilt": "^0.1.4",
     "react-transition-group": "^4.4.2",
     "react-youtube": "^9.0.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
