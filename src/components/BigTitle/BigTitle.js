@@ -39,7 +39,7 @@ export default function BigTitle({lineContent1, lineContent2, lineContent3}) {
                     <div className="tilt-inner line hero-project-category mt-5">{lineContent1}</div>
                 </div>
                 <div className="line-wrap">
-                    <div id="main-hero-text" style={{fontSize: "200px", lineHeight: "220px"}} className="tilt-inner line bebas-text hero-project-title m-0">{lineContent2}</div>
+                    <div id="main-hero-text" style={{fontSize: "190px", lineHeight: "210px"}} className="tilt-inner line bebas-text hero-project-title m-0">{lineContent2}</div>
                 </div>
                 <div className="line-wrap hero-project-desc mb-5">
                     {/* <p  style={{fontSize: "32px", lineHeight: "54px"}}>Working at the intersection of design and code, creating experiences that help people.</p> */}
