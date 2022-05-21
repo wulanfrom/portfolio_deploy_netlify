@@ -68,6 +68,11 @@ function App() {
         <Preloader />
       ): (
         <div ref={containerRef} id="portfolio-container">
+            <div id="responsive-available" className="d-flex px-5 text-center flex-column justify-content-center align-items-center">
+              <p className="responsive-warn-1 m-2">The portfolio is not yet optimized for smaller screens</p>
+              <p className="responsive-warn-2">Please check the desktop version for the best experience 🖥️ </p>
+              <p className="responsive-warn-3 mt-4">Update coming soon!</p>
+            </div>
             <Navigation />
 
             <ScrollToTop />
