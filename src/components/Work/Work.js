@@ -16,38 +16,41 @@ import { gsap } from 'gsap'
 export default function Work() {
     
   return (
-    <div data-scroll-section>
+    <div style={{backgroundColor: "#171717"}} data-scroll-section>
         <div>
-            <div style={{backgroundColor: "#171717", color: "#fff", height: "1000px"}} className="hero-section hero-animated d-flex flex-column">
-                <Divider height={120}/>
+            <div style={{ color: "#fff" }} className="hero-section hero-animated d-flex flex-column">
+                <Divider height={160}/>
                 <Container className="work-inner">
-                    <BigTitle lineContent1="DESIGNER // DEVELOPER // PROBLEM SOLVER" lineContent2="Hi, I'm Nabila!👋" lineContent3="Working at the intersection of design and code, creating experiences that help people."/>
+                    <BigTitle lineContent1="hello world," lineContent2="I’m Nabila" lineContent3="UX Engineer" lineContent4="Working at the intersection of design and code, creating experiences that help people."/>
                 </Container>
+                <Divider height={180}/>
             </div>
         </div>
 
-        <Container>
-            <Divider height={72}/>
+        <div className="projects-container" style={{backgroundColor: "#fff", height: "100%", borderRadius: "80px"}}>
+            <Container>
+                <Divider height={150}/>
 
-            <div id="featured-projects">
-                <FeaturedProjects />
-            </div>
+                <div id="featured-projects">
+                    <FeaturedProjects />
+                </div>
 
-            <Divider height={60}/>
+                <Divider height={200}/>
 
-            <div id="other-projects">
-                <OtherProjects />
-            </div>
-            
-            <Divider height={250}/>
+                <div id="other-projects">
+                    <OtherProjects />
+                </div>
+                
+                <Divider height={250}/>
 
-            <div id="publications">
-                <Publications />
-            </div>
+                <div id="publications">
+                    <Publications />
+                </div>
 
-            <Divider height={120}/>
+                <Divider height={180}/>
 
-        </Container>
+            </Container>
+        </div>
 
         <div>
             <Footer />

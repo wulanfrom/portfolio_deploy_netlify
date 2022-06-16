@@ -14,3 +14,20 @@
 .bebas-text {
     font-family: 'Bebas Neue', cursive;
 }
+
+.featured-small-width {
+    display: none!important;
+}
+
+.hero-project-title {
+    font-size: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .featured-full-width {
+        display: none!important;
+    }
+    .featured-small-width {
+        display: block!important;
+    }
+}

@@ -17,12 +17,19 @@ import WheelOn from '../../resources/featuredPictures/wheelOn-featured.png'
 import XDesign from '../../resources/featuredPictures/kixlab-featured.png'
 import AsianCHI from '../../resources/featuredPictures/asianCHI-featured.png'
 
+// featured projects small images
+import CeeyaImageSmall from '../../resources/small-cards/small-sc.png'
+import SomeWeatherImageSmall from '../../resources/small-cards/small-sw.png'
+import ReBalanceImageSmall from '../../resources/small-cards/small-rb.png'
+import WheelOnSmall from '../../resources/small-cards/small-wo.png'
+import XDesignSmall from '../../resources/small-cards/small-xd.png'
+import AsianCHISmall from '../../resources/small-cards/small-asianchi.png'
+
 // other projects
 import Nft from '../../resources/nftPoster/nft.png'
 import ColorArt from '../../resources/colorArt/color.png'
 import GoodFood from '../../resources/goodFood/goodFood.png'
-
-
+import SectionTitle from '../SectionTitle/SectionTitle'
 
 export default function FeaturedProjects() {
   const descriptions = {
@@ -55,6 +62,15 @@ export default function FeaturedProjects() {
     kixlab: XDesign,
   }
 
+  const imagesSmall = {
+    ceeya: CeeyaImageSmall, 
+    someWeather: SomeWeatherImageSmall,
+    reBalance: ReBalanceImageSmall,
+    wheelOn: WheelOnSmall,
+    asianCHI: AsianCHISmall,
+    kixlab: XDesignSmall,  
+  }
+
   const colors = {
     ceeya: ["#272727", "#ffffff"],
     someWeather: ["#4CDCB1", "#000000"],
@@ -79,6 +95,7 @@ export default function FeaturedProjects() {
 
     useEffect(() => {
         if (onScreen) setReveal(onScreen)
+        
     }, [onScreen])
     
     useEffect(() => {
@@ -104,44 +121,56 @@ export default function FeaturedProjects() {
 
   return (
     <div>
-        <div className="sub-title my-5">
-            <h1 ref={titleRef} style={{fontSize: "120px"}} className="bebas-text">Featured Projects</h1>
+        {/* <div className="sub-title my-5"> */}
+            {/* <h1 ref={titleRef} style={{fontSize: "120px"}} className="bebas-text">Featured Projects</h1> */}
             {/* <p className="section-sub">Here are some projects that I am proud of!</p> */}
+        <div>
+          <SectionTitle line1="Featured" line2="Works" desc="UX ENGINEER // UX DESIGN // WEB DEVELOPMENT" />
+        </div>
+        {/* <div className="project"> */}
+
+        {/* Featured works */}
+        <div>
+          <Divider height={80}/>
+          <FeaturedCard className="featured-full-width" category={category.ceeya} link={projectLinks.ceeya} title={"Search.connect"} smallImg={imagesSmall.ceeya} desc={descriptions.ceeya} img={images.ceeya} bgColor={colors.ceeya[0]} textColor={colors.ceeya[1]}/>
+            {/* <FeaturedCard className="featured-small-width" category={category.ceeya} link={projectLinks.ceeya} title={"Search.connect"} desc={descriptions.ceeya} img={imagesSmall.ceeya} bgColor={colors.ceeya[0]} textColor={colors.ceeya[1]}/> */}
+          {/* </div>/ */}
+
+          <Divider height={12}/>
+
+          {/* <div className="project"> */}
+            <FeaturedCard className="featured-full-width" category={category.reBalance} link={projectLinks.reBalance} title={"reBalance"} smallImg={imagesSmall.reBalance} desc={descriptions.reBalance} img={images.reBalance} bgColor={colors.reBalance[0]} textColor={colors.reBalance[1]}/>
+            {/* <FeaturedCard className="featured-small-width" category={category.reBalance} link={projectLinks.reBalance} title={"reBalance"} desc={descriptions.reBalance} img={imagesSmall.reBalance} bgColor={colors.reBalance[0]} textColor={colors.reBalance[1]}/> */}
+          {/* </div> */}
+
+          <Divider height={12}/>
+
+          {/* <div className="project"> */}
+          <FeaturedCard className="featured-full-width" category={category.wheelOn} link={projectLinks.wheelOn} title={"WheelOn"} smallImg={imagesSmall.wheelOn} desc={descriptions.wheelOn} img={images.wheelOn} bgColor={colors.wheelOn[0]} textColor={colors.wheelOn[1]}/>
+          {/* <FeaturedCard className="featured-small-width" category={category.wheelOn} link={projectLinks.wheelOn} title={"WheelOn"} desc={descriptions.wheelOn} img={imagesSmall.wheelOn} bgColor={colors.wheelOn[0]} textColor={colors.wheelOn[1]}/> */}
+          {/* </div> */}
         </div>
 
-        {/* <div className="project"> */}
-          <FeaturedCard category={category.ceeya} link={projectLinks.ceeya} title={"Search.connect"} desc={descriptions.ceeya} img={images.ceeya} bgColor={colors.ceeya[0]} textColor={colors.ceeya[1]}/>
-        {/* </div>/ */}
-
-        <Divider height={'32px'}/>
+        {/* <Divider height={80}/> */}
 
         {/* <div className="project"> */}
-          <FeaturedCard category={category.reBalance} link={projectLinks.reBalance} title={"reBalance"} desc={descriptions.reBalance} img={images.reBalance} bgColor={colors.reBalance[0]} textColor={colors.reBalance[1]}/>
+        {/* <FeaturedCard className="featured-full-width" category={category.someWeather} link={projectLinks.someWeather} title={"Some(섬) Weather"} desc={descriptions.someWeather} img={images.someWeather} bgColor={colors.someWeather[0]} textColor={colors.someWeather[1]}/> */}
+        {/* <FeaturedCard className="featured-small-width" category={category.someWeather} link={projectLinks.someWeather} title={"Some(섬) Weather"} desc={descriptions.someWeather} img={imagesSmall.someWeather} bgColor={colors.someWeather[0]} textColor={colors.someWeather[1]}/> */}
         {/* </div> */}
 
-        <Divider height={'32px'}/>
+        {/* <Divider height={'32px'}/> */}
 
-        {/* <div className="project"> */}
-        <FeaturedCard category={category.wheelOn} link={projectLinks.wheelOn} title={"WheelOn"} desc={descriptions.wheelOn} img={images.wheelOn} bgColor={colors.wheelOn[0]} textColor={colors.wheelOn[1]}/>
+        {/* <FeaturedCard className="featured-full-width" category={category.kixlab} link={projectLinks.kixlab} title={"XDesign"} desc={descriptions.kixlab} img={images.kixlab} bgColor={colors.kixlab[0]} textColor={colors.kixlab[1]}/> */}
+        {/* <FeaturedCard className="featured-small-width" category={category.kixlab} link={projectLinks.kixlab} title={"XDesign"} desc={descriptions.kixlab} img={imagesSmall.kixlab} bgColor={colors.kixlab[0]} textColor={colors.kixlab[1]}/> */}
         {/* </div> */}
 
-        <Divider height={'32px'}/>
+        {/* <Divider height={'32px'}/> */}
 
-        {/* <div className="project"> */}
-        <FeaturedCard category={category.someWeather} link={projectLinks.someWeather} title={"Some(섬) Weather"} desc={descriptions.someWeather} img={images.someWeather} bgColor={colors.someWeather[0]} textColor={colors.someWeather[1]}/>
+        {/* <FeaturedCard className="featured-full-width" category={category.asianCHI} link={projectLinks.asianCHI} title={"AsianCHI Symposium 2021 Official Website"} desc={descriptions.asianCHI} img={images.asianCHI} bgColor={colors.asianCHI[0]} textColor={colors.asianCHI[1]}/> */}
+        {/* <FeaturedCard className="featured-small-width" category={category.asianCHI} link={projectLinks.asianCHI} title={"AsianCHI Symposium 2021 Official Website"} desc={descriptions.asianCHI} img={imagesSmall.asianCHI} bgColor={colors.asianCHI[0]} textColor={colors.asianCHI[1]}/> */}
         {/* </div> */}
 
-        <Divider height={'32px'}/>
-
-        <FeaturedCard category={category.kixlab} link={projectLinks.kixlab} title={"XDesign"} desc={descriptions.kixlab} img={images.kixlab} bgColor={colors.kixlab[0]} textColor={colors.kixlab[1]}/>
-        {/* </div> */}
-
-        <Divider height={'32px'}/>
-
-        <FeaturedCard category={category.asianCHI} link={projectLinks.asianCHI} title={"AsianCHI Symposium 2021 Official Website"} desc={descriptions.asianCHI} img={images.asianCHI} bgColor={colors.asianCHI[0]} textColor={colors.asianCHI[1]}/>
-        {/* </div> */}
-
-        <Divider height={'32px'}/>
+        {/* <Divider height={'32px'}/> */}
     </div>
   )
 }

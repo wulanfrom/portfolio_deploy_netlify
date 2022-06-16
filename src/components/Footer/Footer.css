@@ -76,8 +76,11 @@
 
 .footer-tag {
     font-family: 'Source Code Pro', monospace;
-    text-transform: uppercase;
-    font-size: 20px;
+    /* text-transform: uppercase; */
+    font-style: italic;
+    font-size: 32px;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 #info-up {
@@ -92,4 +95,26 @@
 
 .footer-info-text p {
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-move-text {
+        font-size: 110px!important;
+        line-height: 120px!important;
+    }
+    .footer-tag {
+        font-size: 28px!important;
+        line-height: 32px!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-move-text {
+        font-size: 100px!important;
+        line-height: 110px!important;
+    }
+    .footer-tag {
+        font-size: 20px!important;
+        line-height: 30px!important;
+    }
 }

@@ -4,7 +4,7 @@ import SplitText from '../../utils/Split3.min.js'
 import { gsap } from 'gsap'
 import './BigTitle.css'
 
-export default function BigTitle({lineContent1, lineContent2, lineContent3}) {
+export default function BigTitle({lineContent1, lineContent2, lineContent3, lineContent4}) {
     const timeline = gsap.timeline();
 
     useEffect(() => {
@@ -33,21 +33,24 @@ export default function BigTitle({lineContent1, lineContent2, lineContent3}) {
   return (
     <Container>
         <Row>
-            <Col sm={10} md={10} lg={101}>
-            <div className="page-title">
+            <Col sm={12} md={12} lg={12}>
+            <div className="page-title text-center">
                 <div className="line-wrap">
-                    <div className="tilt-inner line hero-project-category mt-5">{lineContent1}</div>
+                    <div className="line-content-1">{lineContent1}</div>
                 </div>
                 <div className="line-wrap">
-                    <div id="main-hero-text" style={{fontSize: "190px", lineHeight: "210px"}} className="tilt-inner line bebas-text hero-project-title m-0">{lineContent2}</div>
-                </div>
-                <div className="line-wrap hero-project-desc mb-5">
-                    {/* <p  style={{fontSize: "32px", lineHeight: "54px"}}>Working at the intersection of design and code, creating experiences that help people.</p> */}
-                    <p  style={{fontSize: "32px", lineHeight: "54px"}}>{lineContent3}</p>
+                    <div style={{fontSize: "190px", lineHeight: "210px"}} className="tilt-inner line bebas-text hero-project-title m-0">{lineContent2}</div>
+                    <div style={{fontSize: "190px", lineHeight: "190px"}} className="tilt-inner line bebas-text hero-project-title m-0">{lineContent3}</div>
                 </div>
             </div>
             </Col>
-            <Col></Col>
+        </Row>
+        <Row>
+            <Col sm={12} md={12} lg={12}>
+                <div style={{maxWidth: "400px", marginLeft: "auto", marginRight: "auto"}}className="text-center text">
+                    <p className="my-desc">{lineContent4}</p>
+                </div>
+            </Col>
         </Row>
     </Container>
   )

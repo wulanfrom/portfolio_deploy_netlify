@@ -19,8 +19,8 @@ import Email from '../../resources/icons/Vector-3.svg'
 import Github from '../../resources/icons/Vector.svg'
 
 export default function About() {
-  const title = "Call me nabila🦋👐"
-    const desc = "I’m an Indonesian pursuing a Computer Science and Industrial Design degree at KAIST, South Korea."
+  const title = "I'm nabila👋"
+    const desc = "A curious mind with a passion for learning new things and understanding the world through the lenses of technology, design, and people."
     const role = "UX Engineering, Web Design, Product Design, UX Design, Front-End Development, HCI, AI/ML"
     const sector = "🍵🎨🎸📸📚"
     const category = "LETS GET TO KNOW EACH OTHER!"
@@ -70,8 +70,11 @@ export default function About() {
           <Container className="pt-5">
             {/* <Divider height={20} /> */}
             {/* <div className="mt-5"></div> */}
+            <Divider height={150} />
             {/* <p className="hero-project-category m-0">{category}</p> */}
-            <BigTitle lineContent1={category} lineContent2={title} lineContent3={desc}/>
+            <BigTitle lineContent1={category} lineContent2={title} lineContent3="" lineContent4={desc} />
+            <Divider height={120} />
+            {/* <BigTitle lineContent1={category} lineContent2={title} lineContent3={desc}/> */}
             {/* <p style={{fontSize: "150px", lineHeight: "150px"}} className="bebas-text hero-project-title m-0">{title}</p> */}
             {/* <p className="hero-project-desc mb-5">{desc}</p> */}
             <Row>

@@ -10,3 +10,35 @@
 .lineChildren {
     transform: translate(0, 500px);
 }
+
+.line-content-1 {
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.my-desc {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-project-title {
+        font-size: 135px!important;
+        line-height:135px!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .line-content-1 {
+        font-size: 36px!important;
+        line-height: 44px!important;
+    }
+    .hero-project-title {
+        font-size: 110px!important;
+        line-height:110px!important;
+    }
+}
+
+

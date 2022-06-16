@@ -63,15 +63,15 @@ export default function Footer() {
                 <Row ref={footerRef} className={cn({"is-reveal": reveal})}>
                     <Col sm={9} md={8} lg={7} className="d-flex align-items-center">
                         <div className="text-white main-contact">
-                            <p style={{fontSize: "120px", lineHeight: "130px"}} className="footer-move-text bebas-text m-0">Lets start something together🚀</p>
-                            <p className="footer-move-text  footer-tag m-0 mb-4">write me a message</p>
+                            <p style={{fontSize: "150px", lineHeight: "160px"}} className="footer-move-text bebas-text m-0">Lets start something together🚀</p>
+                            <p className="footer-move-text footer-tag m-0 mb-4">biasindi.wulanfrom@gmail.com</p>
                         </div>
                     </Col>
                 </Row>
                 <Row className="footer-responsive mt-3 mb-2">
                     <Col sm={12} md={12} lg={12} className="d-flex align-items-center justify-content-center text-white">
                         <div className="d-flex">
-                            <a href="mailto:biasindi.wulanfrom@gmail.com" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Email} /></a>
+                            {/* <a href="mailto:biasindi.wulanfrom@gmail.com" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Email} /></a> */}
                             <a href="https://www.linkedin.com/in/wulanfrom/" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={LinkedIn} /></a>
                             <a href="https://www.behance.net/wulanfrom" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Behance} /></a>
                             <a href="https://dribbble.com/biasindi" target="_blank" rel="noopener noreferrer" className="social-links"><img className="social-icon me-3 mb-2" src={Dribbble} /></a>

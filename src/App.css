@@ -85,7 +85,8 @@ html.has-scroll-smooth {
   height:0;
 }
 
-@media screen and (max-width: 1000px) {
+/* Responsive block */
+/* @media screen and (max-width: 1000px) {
   #responsive-available {
     width: 100%;
     height: 100vh;
@@ -110,10 +111,10 @@ html.has-scroll-smooth {
   }
 
   body {
-    overflow: hidden; /* Hide scrollbars */
+    overflow: hidden; 
   }
 
   #portfolio-container {
     display: none;
   }
-}
+} */

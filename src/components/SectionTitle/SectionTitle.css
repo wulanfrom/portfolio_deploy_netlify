@@ -1,0 +1,11 @@
+.line1-section, line2-section {
+    
+}
+
+.desc-section {
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

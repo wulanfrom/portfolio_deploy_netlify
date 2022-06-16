@@ -17,3 +17,26 @@
     display: flex;
     justify-content: center;
 }  */
+
+@media screen and (max-width: 768px) {
+    .other-col-left {
+      padding: 0!important;
+      margin-bottom: 12px;
+    }
+    .other-col-right {
+      padding: 0!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .other-col-left {
+      padding: 0!important;
+      margin-bottom: 12px;
+    }
+    .other-col-right {
+      padding: 0!important;
+    }
+    .projects-container {
+        border-radius: 48px!important;
+    }
+}

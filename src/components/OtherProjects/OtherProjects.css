@@ -22,3 +22,24 @@
 .sub-title {
   border-bottom: 1px solid #000;
 }
+
+/* for medium size screens bellow */
+@media screen and (max-width: 768px) {
+  .other-col-left {
+    padding: 0!important;
+    margin-bottom: 12px;
+  }
+  .other-col-right {
+    padding: 0!important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .other-col-left {
+    padding: 0!important;
+    margin-bottom: 12px;
+  }
+  .other-col-right {
+    padding: 0!important;
+  }
+}
