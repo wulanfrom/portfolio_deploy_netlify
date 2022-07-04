@@ -4,8 +4,6 @@ import Divider from '../Divider/Divider'
 import './About.css'
 import BigTitle from '../BigTitle/BigTitle'
 import SectionTitle from '../SectionTitle/SectionTitle'
-import { ReactPictureGrid } from 'react-picture-grid';
-import Gallery from 'react-grid-gallery';
 
 import aboutMePng from '../../resources/aboutMe/main-img.png'
 import endingPng from '../../resources/aboutMe/ending.svg'
