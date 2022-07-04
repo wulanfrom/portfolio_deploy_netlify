@@ -110,11 +110,11 @@
 
 @media screen and (max-width: 576px) {
     .footer-move-text {
-        font-size: 100px!important;
-        line-height: 110px!important;
+        font-size: 72px!important;
+        line-height: 82px!important;
     }
     .footer-tag {
-        font-size: 20px!important;
-        line-height: 30px!important;
+        font-size: 14px!important;
+        line-height: 24px!important;
     }
 }

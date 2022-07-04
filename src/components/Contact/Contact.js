@@ -37,22 +37,16 @@ export default function Contact() {
       <div>
         <div style={{backgroundColor: "#171717", color: "#fff", height: "100vh" }} className="hero-contact hero-section d-flex justify-content-center flex-column">
           <div className="pt-5">
-            <Container className="pt-5" >
+            <Container className="pt-5">
               <div className="mt-5"></div>
               <p className="hero-project-category mb-2">want to make something amazing together?</p>
-              <p style={{fontSize: "150px", lineHeight: "150px", width: "700px"}} className="bebas-text hero-project-title m-0">Lets chat over coffee☕️</p>
+              <p style={{fontSize: "150px", lineHeight: "150px"}} className="bebas-text hero-project-title m-0">Lets chat over coffee☕️</p>
               <p className="hero-project-desc"></p>
 
               <div className="d-flex">
                   <a href="mailto:biasindi.wulanfrom@gmail.com" className="social-links mb-3">Email</a>
                   <p className="mx-4">//</p>
-                  <a href="https://www.behance.net/wulanfrom"className="social-links mb-3">Behance</a>
-                  <p className="mx-4">//</p>
-                  <a href="https://dribbble.com/biasindi" className="social-links mb-3">Dribbble</a>
-                  <p className="mx-4">//</p>
                   <a href="https://www.linkedin.com/in/wulanfrom/" className="social-links mb-3">LinkedIn</a>
-                  <p className="mx-4">//</p>
-                  <a href="https://github.com/wulanfrom" className="social-links mb-3">Github</a>
               </div>
             </Container>
           </div>

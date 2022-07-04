@@ -34,8 +34,8 @@ export default function Publications() {
 
   return (
     <div>
-        <div className="publication-title">
-          <SectionTitle line1="Publications" line2="" desc="HCI RESEARCH // PAPER // POSTER" />
+        <div>
+          <SectionTitle className="publication-title" line1="Publications" line2="" desc="HCI RESEARCH // PAPER // POSTER" />
         </div>
 
         <Container style={{maxWidth: "690px"}}>

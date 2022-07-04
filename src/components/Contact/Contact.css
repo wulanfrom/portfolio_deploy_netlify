@@ -61,14 +61,18 @@
 
 @media screen and (max-width: 576px) {
     .hero-project-title  {
-        font-size: 80px;
-        line-height: 120%;
+        font-size: 80px!important;
+        line-height: 90px!important;
     }
 
     .hero-project-desc, .project-info, .hero-project-category {
         font-size: 16px;
     }
+    .lets-chat-coffee {
+        width: 80%;
+    }
 }
+
 
 .divider-footer {
     /* width: 1280px; */

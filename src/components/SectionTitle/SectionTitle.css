@@ -9,3 +9,25 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+
+@media screen and (max-width: 768px) {
+    .section-line-1, .section-line-2 {
+        font-size: 100px!important;
+        line-height: 110px!important;
+    }
+    .my-desc {
+        font-size: 20px!important;
+        line-height: 30px!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-line-1, .section-line-2 {
+        font-size: 80px!important;
+        line-height: 90px!important;
+    }
+    .my-desc {
+        font-size: 20px!important;
+        line-height: 30px!important;
+    }
+}

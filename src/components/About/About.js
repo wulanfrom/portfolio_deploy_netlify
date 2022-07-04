@@ -118,7 +118,7 @@ export default function About() {
 
         {/* Overview */}
         <Container>
-          <Row>
+          <Row className="my-story-cont">
           <Col>
               <div>
                 <div className="Section-line-about"></div>
@@ -128,7 +128,7 @@ export default function About() {
             <Col>
             </Col>
           </Row>
-          <Row>
+          <Row className="my-story-cont">
             <Col md={7} lg={6}>
               <div style={{width: "90%"}}>
                 <p className="Section-title">How did I end up across the world from home?</p>
@@ -141,7 +141,7 @@ export default function About() {
               </div>
             </Col>
             <Col md={5} lg={6}>
-              <img style={{borderRadius: "12px"}} src={heroImg} />
+              <img style={{borderRadius: "12px", width: "100%"}} src={heroImg} />
             </Col>
           </Row>
 
@@ -150,24 +150,24 @@ export default function About() {
     
         {/* <ReactPictureGrid closeOnClick showPreview className="grid-images-nft"data={data} gap={20} /> */}
         <Row style={{marginTop: "20px"}}>
-          <Col>
+          <Col sm={12} md={4} lg={4}>
             <img style={{width: "100%"}} src={context1} />
           </Col>
-          <Col>
+          <Col sm={12} md={4} lg={4}>
             <img style={{width: "100%"}} src={context2} />
           </Col>
-          <Col>
+          <Col sm={12} md={4} lg={4}>
             <img style={{width: "100%"}} src={context3} />
           </Col>
         </Row>
         <Row style={{marginTop: "20px"}}>
-          <Col>
+          <Col sm={12} md={4} lg={4}>
             <img style={{width: "100%"}} src={context4} />
           </Col>
-          <Col>
+          <Col sm={12} md={4} lg={4}>
             <img style={{width: "100%"}} src={context5} />
           </Col>
-          <Col>
+          <Col sm={12} md={4} lg={4}>
             <img style={{width: "100%"}} src={context6} />
           </Col>
         </Row>

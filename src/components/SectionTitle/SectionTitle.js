@@ -16,15 +16,15 @@ export default function SectionTitle(props) {
                     <div className="line-content-1">{lineContent1}</div>
                 </div> */}
                 <div className="line-wrap">
-                    <div style={{fontSize: "190px", lineHeight: "160px"}} className="bebas-text hero-project-title m-0 line1-section">{line1}</div>
-                    <div style={{fontSize: "190px", lineHeight: "160px"}} className="bebas-text hero-project-title m-0 line2-section">{line2}</div>
+                    <div style={{fontSize: "190px", lineHeight: "160px"}} className="section-line-1 bebas-text hero-project-title m-0 line1-section">{line1}</div>
+                    <div style={{fontSize: "190px", lineHeight: "160px"}} className="section-line-2 bebas-text hero-project-title m-0 line2-section">{line2}</div>
                 </div>
             </div>
             </Col>
         </Row>
         <Row>
             <Col sm={12} md={12} lg={12}>
-                <div style={{maxWidth: "600px", marginLeft: "auto", marginRight: "auto"}}className="text-center text desc-section">
+                <div style={{maxWidth: "600px", marginLeft: "auto", marginRight: "auto"}}className="section-line-3 text-center text desc-section">
                     <p className="my-desc">{desc}</p>
                 </div>
             </Col>
