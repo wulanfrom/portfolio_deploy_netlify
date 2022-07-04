@@ -6,7 +6,8 @@
 }
 
 .desc-row-other {
-    padding: 42px 32px 0 32px;
+    padding-top: 12px;
+    width: 80%;
 }
 
 .img-other-container {
@@ -31,8 +32,8 @@
 }
 
 .title-text-other {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 32px;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -40,6 +41,7 @@
     /* height: 590px; */
     width: 100%;
     overflow: hidden;
+    border-radius: 12px;
     /* // display: inline!important;
     // clip-path: inset(100% 0% 0% 0%);
     // transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
@@ -74,11 +76,11 @@
     .project-img-other {
         width: 110%;
     }
-    .desc-row-other {
+    /* .desc-row-other {
         padding: 42px 24px 0 24px;
-    }
+    } */
     .other-card-container {
-        height: 560px;
+        /* height: 560px; */
         border-radius: 12px;
     }
 }

@@ -2,19 +2,8 @@
     border-top: 1px solid #C4C4C4;
 }
 
-.pubs-text {
-    /* // line-height: 1.12; */
-    opacity: 1;
-    /* > div{
-        opacity: 0;
-        transform: translate(0);
-    }
-
-    &.is-reveal {
-        opacity: 1;
-    } */
-}
-
 @media screen and (max-width: 576px) {
-    
+    .publication-title {
+        font-size: 80px!important;
+    }
 }

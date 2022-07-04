@@ -118,7 +118,7 @@ export default function FeaturedProjects() {
             })
         }
     }, [reveal])
-
+  
   return (
     <div>
         {/* <div className="sub-title my-5"> */}
@@ -133,13 +133,13 @@ export default function FeaturedProjects() {
         <div>
           <Divider height={80}/>
           <FeaturedCard className="featured-full-width" category={category.ceeya} link={projectLinks.ceeya} title={"Search.connect"} smallImg={imagesSmall.ceeya} desc={descriptions.ceeya} img={images.ceeya} bgColor={colors.ceeya[0]} textColor={colors.ceeya[1]}/>
-            {/* <FeaturedCard className="featured-small-width" category={category.ceeya} link={projectLinks.ceeya} title={"Search.connect"} desc={descriptions.ceeya} img={imagesSmall.ceeya} bgColor={colors.ceeya[0]} textColor={colors.ceeya[1]}/> */}
+          {/* <FeaturedCard className="featured-small-width" category={category.ceeya} link={projectLinks.ceeya} title={"Search.connect"} desc={descriptions.ceeya} img={imagesSmall.ceeya} bgColor={colors.ceeya[0]} textColor={colors.ceeya[1]}/> */}
           {/* </div>/ */}
 
           <Divider height={12}/>
 
           {/* <div className="project"> */}
-            <FeaturedCard className="featured-full-width" category={category.reBalance} link={projectLinks.reBalance} title={"reBalance"} smallImg={imagesSmall.reBalance} desc={descriptions.reBalance} img={images.reBalance} bgColor={colors.reBalance[0]} textColor={colors.reBalance[1]}/>
+          <FeaturedCard className="featured-full-width" category={category.reBalance} link={projectLinks.reBalance} title={"reBalance"} smallImg={imagesSmall.reBalance} desc={descriptions.reBalance} img={images.reBalance} bgColor={colors.reBalance[0]} textColor={colors.reBalance[1]}/>
             {/* <FeaturedCard className="featured-small-width" category={category.reBalance} link={projectLinks.reBalance} title={"reBalance"} desc={descriptions.reBalance} img={imagesSmall.reBalance} bgColor={colors.reBalance[0]} textColor={colors.reBalance[1]}/> */}
           {/* </div> */}
 

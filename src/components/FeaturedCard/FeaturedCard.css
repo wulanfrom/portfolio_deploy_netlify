@@ -13,6 +13,10 @@
     min-height: 470px;
 }
 
+.feature-description {
+    font-weight: 300;
+}
+
 .category-text {
     text-transform: uppercase;
     font-size: 12px;
@@ -46,7 +50,26 @@
     /* padding-left: 1rem; */
 }
 
+@media screen and (max-width: 1190px) {
+   .project-featured-title {
+        font-size: 36px!important;
+   }
+   .category-text {
+        width: 80%;
+   }
+   .project-img {
+        object-fit: fill;
+        width: 130%;
+   }
+}
+
 @media screen and (max-width: 768px) {
+    .project-featured-title {
+        font-size: 60px!important;
+   }
+   .featured-desc {
+        width: 65%!important;
+    }
     .card-div {
         height: 100%;
     }

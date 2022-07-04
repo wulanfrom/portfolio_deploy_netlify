@@ -13,11 +13,18 @@ import useOnScreen from '../../hooks/useOnScreen'
 import cn from 'classnames'
 
 // other projects
-import Nft from '../../resources/nftPoster/nft.png'
-import ColorArt from '../../resources/colorArt/color.png'
-import AsianCHI from '../../resources/asianCHI/asianchi.png'
-import GoodFood from '../../resources/goodFood/goodFood.png'
-import Kixlab from '../../resources/xDesign/xdesign.png'
+// import Nft from '../../resources/nftPoster/nft.png'
+// import ColorArt from '../../resources/colorArt/color.png'
+// import AsianCHI from '../../resources/asianCHI/asianchi.png'
+// import GoodFood from '../../resources/goodFood/goodFood.png'
+// import Kixlab from '../../resources/xDesign/xdesign.png'
+
+import Nft from '../../resources/otherProjects/nftArt.png'
+import ColorArt from '../../resources/otherProjects/colorArt.png'
+import AsianCHI from '../../resources/otherProjects/asianCHI.png'
+import GoodFood from '../../resources/otherProjects/goodFood.png'
+import XDesign from '../../resources/otherProjects/xdesign.png'
+import SomeWeather from '../../resources/otherProjects/someWeather.png'
 
 // featured projects small images
 import SomeWeatherImageSmall from '../../resources/small-cards/small-sw.png'
@@ -46,9 +53,9 @@ export default function OtherProjects() {
         goodFood: GoodFood,
         nft: Nft,
         colorArt: ColorArt,
-        someWeather: SomeWeatherImageSmall,
-        asianCHI: AsianCHISmall,
-        xDesign: XDesignSmall,  
+        someWeather: SomeWeather,
+        asianCHI: AsianCHI,
+        xDesign: XDesign,  
     }
     const projectLink = {
         goodFood:"goodFood",
@@ -117,12 +124,12 @@ export default function OtherProjects() {
                         <OtherCard title={"XDesign"} link={projectLink.xDesign} img={img.xDesign} category={category.xDesign} bgColor={color.xDesign[0]} textColor={color.xDesign[1]} />
                     </div>
                 </Col> */}
-                <Col className="other-col-left" style={{paddingRight: "6px"}} sm={12} md={12} lg={6}>
+                <Col className=""sm={12} md={12} lg={6}>
                     <div className="other-project">
                         <OtherCard title={"Some(섬) Weather"} link={projectLink.someWeather} img={img.someWeather} category={category.someWeather} bgColor={color.someWeather[0]} textColor={color.someWeather[1]} desc={desc.someWeather}/>
                     </div>
                 </Col>
-                <Col className="other-col-right" style={{paddingLeft: "6px"}} sm={12} md={12} lg={6}>
+                <Col className="" sm={12} md={12} lg={6}>
                     <div className="other-project">
                         <OtherCard title={"XDesign"} link={projectLink.xDesign} img={img.xDesign} category={category.xDesign} bgColor={color.xDesign[0]} textColor={color.xDesign[1]} desc={desc.xDesign}/>
                     </div>
@@ -134,24 +141,24 @@ export default function OtherProjects() {
                 </Col> */}
             </Row>
             <Row style={{marginBottom: "12px"}} className="p-0">
-                <Col className="other-col-left" style={{paddingRight: "6px"}} sm={12} md={12} lg={6}>
+                <Col className="" sm={12} md={12} lg={6}>
                     <div className="other-project">
                         <OtherCard title={"asian chi symposium "} link={projectLink.asianCHI} img={img.asianCHI} category={category.asianCHI} bgColor={color.asianCHI[0]} textColor={color.asianCHI[1]} desc={desc.asianCHI}/>
                     </div>
                 </Col>
-                <Col className="other-col-right" style={{paddingLeft: "6px"}} sm={12} md={12} lg={6}>
+                <Col className="" sm={12} md={12} lg={6}>
                     <div className="other-project">
                         <OtherCard title={"NFT Crypto Art is Changing How Artists Earn, but at What Cost?"} link={projectLink.nft} img={img.nft} category={category.nft} bgColor={color.nft[0]} textColor={color.nft[1]} desc={desc.nft}/>
                     </div>
                 </Col>
             </Row>
             <Row style={{marginBottom: "12px"}} className="p-0">
-                <Col className="other-col-left" style={{paddingRight: "6px"}} sm={12} md={12} lg={6}>
+                <Col className="" sm={12} md={12} lg={6}>
                     <div className="other-project">
                         <OtherCard title={"Color My Influence"} link={projectLink.colorArt} img={img.colorArt} category={category.colorArt} bgColor={color.colorArt[0]} textColor={color.colorArt[1]} desc={desc.colorArt}/>
                     </div>
                 </Col>
-                <Col className="other-col-right" style={{paddingLeft: "6px"}} sm={12} md={12} lg={6}>
+                <Col className="" sm={12} md={12} lg={6}>
                     <div className="other-project">
                         <OtherCard title={"Good Food that Feels like Home"} link={projectLink.goodFood} img={img.goodFood} category={category.goodFood} bgColor={color.goodFood[0]} textColor={color.goodFood[1]} desc={desc.goodFood}/>
                     </div>

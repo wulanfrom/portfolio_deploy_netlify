@@ -34,7 +34,7 @@ export default function Publications() {
 
   return (
     <div>
-        <div>
+        <div className="publication-title">
           <SectionTitle line1="Publications" line2="" desc="HCI RESEARCH // PAPER // POSTER" />
         </div>
 

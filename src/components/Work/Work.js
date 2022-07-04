@@ -41,7 +41,7 @@ export default function Work() {
                     <OtherProjects />
                 </div>
                 
-                <Divider height={250}/>
+                <Divider height={200}/>
 
                 <div id="publications">
                     <Publications />
