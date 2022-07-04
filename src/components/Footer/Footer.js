@@ -16,7 +16,7 @@ import LinkedIn from '../../resources/icons/Vector-2.svg'
 import Email from '../../resources/icons/Vector-3.svg'
 import Github from '../../resources/icons/Vector.svg'
 
-export default function Footer() {
+export default function Footer(props) {
     const footerRef = useRef();
     const [reveal, setReveal] = useState(false);
     const onScreen = useOnScreen(footerRef);
