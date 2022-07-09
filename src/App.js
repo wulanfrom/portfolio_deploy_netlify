@@ -27,6 +27,7 @@ import AsianCHI from './components/Projects/AsianCHI/AsianCHI';
 // import locomotiveScroll from 'locomotive-scroll';
 import ScrollToTop from './hooks/ScrollToTop';
 import Preloader from './components/Preloader/Preloader';
+import Transition from './components/Transition/Transition';
 
 function App() {
   const containerRef = useRef(null)
@@ -36,7 +37,7 @@ function App() {
   const [preloader, setPreloader] = useState(true);
   // useLocoScroll(!preloader);
 
-  const [timer, setTimer] = useState(0);
+  const [timer, setTimer] = useState(2); // amount of seconds
   const id = useRef(null);
   const clear = () => {
     window.clearInterval(id.current);
@@ -57,6 +58,7 @@ function App() {
       clear(); //stop the timer if it goes to 0
     }
   }, [timer])
+  console.log(timer);
 
   return (
       <>
@@ -73,25 +75,25 @@ function App() {
               <p className="responsive-warn-2">Please check the desktop version for the best experience 🖥️ </p>
               <p className="responsive-warn-3 mt-4">Update coming soon!</p>
           </div> */}
-        <div ref={containerRef} id="portfolio-container">
-            <Navigation />
+            <div ref={containerRef} id="portfolio-container">
+                <Navigation />
 
-            <ScrollToTop />
-            <Routes>
-              <Route path="/" element={<Work />} />
-              <Route path="about" element={<About />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="ceeya" element={<CeeyaSearch />} />
-              <Route path="someWeather" element={<SomeWeather />} />
-              <Route path="reBalance" element={<ReBalance />} />
-              <Route path="wheelOn" element={<WheelOn />} />
-              <Route path="xDesign" element={<XDesign />} />
-              <Route path="nftPoster" element={<NftPoster />} />
-              <Route path="colorArt" element={<ColorArt />} />
-              <Route path="goodFood" element={<GoodFood />} />
-              <Route path="asianCHI" element={<AsianCHI />} />
-            </Routes>
-          </div>
+                <ScrollToTop />
+                <Routes>
+                  <Route path="/" element={<Work />} />
+                  <Route path="about" element={<About />} />
+                  <Route path="contact" element={<Contact />} />
+                  <Route path="ceeya" element={<CeeyaSearch />} />
+                  <Route path="someWeather" element={<SomeWeather />} />
+                  <Route path="reBalance" element={<ReBalance />} />
+                  <Route path="wheelOn" element={<WheelOn />} />
+                  <Route path="xDesign" element={<XDesign />} />
+                  <Route path="nftPoster" element={<NftPoster />} />
+                  <Route path="colorArt" element={<ColorArt />} />
+                  <Route path="goodFood" element={<GoodFood />} />
+                  <Route path="asianCHI" element={<AsianCHI />} />
+                </Routes>
+              </div>
         </div>
         ) 
       }

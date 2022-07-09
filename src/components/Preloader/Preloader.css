@@ -7,10 +7,12 @@
 .top-text-loader {
     font-family: 'Bebas Neue', cursive;
     font-size: 120px;
+    line-height: 110px;
 }
 
 .loader-title {
     font-family: 'Source Code Pro', monospace;
-    font-size: 32px;
+    font-size: 20px;
     text-transform: uppercase;
+    font-style: italic;
 }

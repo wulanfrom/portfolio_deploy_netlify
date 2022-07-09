@@ -4,6 +4,8 @@ import { Link, NavLink} from 'react-router-dom'
 import { gsap } from 'gsap'
 import './Navigation.css'
 
+import MenuIcon from '../../resources/icons/menu-icon.svg'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -56,11 +58,15 @@ export default function Navigation(props) {
   const border_bottom = '1px solid ' + chosenColor[1];
 
   return (
-    <Navbar data-scroll-section className="wulanfrom-navbar" style={{ color: chosenColor[1], backgroundColor: chosenColor[0] }} expand="lg">
+    <Navbar data-scroll-section className="wulanfrom-navbar" style={{ color: chosenColor[1], backgroundColor: chosenColor[0], zIndex: 100 }} expand="lg">
         <Container className="pb-1" style={{ borderBottom: border_bottom }}>
             <Navbar.Brand style={{ color: chosenColor[1] }} href="/">wulanfrom</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle className="p-1" aria-controls="basic-navbar-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill={chosenColor[1]} class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            </Navbar.Toggle>
+            <Navbar.Collapse id="basic-navbar-nav" style={{ color: chosenColor[1], backgroundColor: chosenColor[0], zIndex: 100 }} >
             <Nav className="ms-auto">
               <NavLink activeStyle={{ textDecoration: "underline" }} style={{ color: chosenColor[1] }} className="nav-link each-link" to="/" exact>Work</NavLink>
               <NavLink activeStyle={{ textDecoration: "underline" }} style={{ color: chosenColor[1] }} className="nav-link each-link" to="/about" exact>About</NavLink>

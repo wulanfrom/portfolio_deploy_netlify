@@ -12,6 +12,7 @@ import Preloader from '../Preloader/Preloader'
 
 import { CSSTransition } from 'react-transition-group';
 import { gsap } from 'gsap'
+import Transition from '../Transition/Transition'
 
 export default function Work() {
     
