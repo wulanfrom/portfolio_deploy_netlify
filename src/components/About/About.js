@@ -131,7 +131,7 @@ export default function About() {
           <Row className="my-story-cont">
             <Col md={7} lg={6}>
               <div style={{width: "90%"}}>
-                <p className="Section-title">How did I end up across the world from home?</p>
+                <p className="Section-title">How did my creative journey start?</p>
                 <div style={{fontSize: "28px", lineHeight: "32px", fontWeight: 500}}>
                   <p style={{ marginBottom: "0.25rem" }}>“We travel, some of us forever, to seek other places, other lives, other souls.”</p>
                   <p>-Anais Inn</p>
